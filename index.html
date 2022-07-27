@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style/style.css">
+  <link rel="stylesheet" href="./style/media.css">
+  <title>SMS Ads</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#!" class="logo">
+        <img src="./assets/Logo_1_desk.png" alt="">
+      </a>
+      <div class="navbar-list_mob">
+        <div class="burger" id="burger"></div>
+        <a href="./pages/register.html" class="nav_link btn btn-outline">Узнать тарифы</a>
+      </div>
+      <div class="navbar-list" id="menu">
+        <div>
+          <a href="#you-gain" class="nav_link">Рассылки</a>
+          <a href="#lidogeneration" class="nav_link">Лидогенерация</a>
+          <a href="#monetization" class="nav_link">Монетизация трафика</a>
+          <a href="#contacts" class="nav_link">Контакты</a>
+        </div>
+        <div>
+          <a href="#!" class="nav_link btn mob:btn-block btn-outline">
+            <svg width="20" height="21" viewbox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.50001 9.49995H10C10.2652 9.49995 10.5196 9.39459 10.7071 9.20705C10.8947 9.01952 11 8.76516 11 8.49995C11 8.23473 10.8947 7.98038 10.7071 7.79284C10.5196 7.6053 10.2652 7.49995 10 7.49995H9.00001V6.99995C9.00001 6.73473 8.89465 6.48038 8.70711 6.29284C8.51958 6.1053 8.26522 5.99995 8.00001 5.99995C7.73479 5.99995 7.48044 6.1053 7.2929 6.29284C7.10537 6.48038 7.00001 6.73473 7.00001 6.99995V7.54995C6.39243 7.67332 5.85237 8.01805 5.48466 8.51721C5.11696 9.01637 4.94785 9.63436 5.01015 10.2512C5.07246 10.868 5.36174 11.4397 5.82184 11.8553C6.28194 12.2708 6.88003 12.5006 7.50001 12.4999H8.50001C8.63262 12.4999 8.75979 12.5526 8.85356 12.6464C8.94733 12.7402 9.00001 12.8673 9.00001 12.9999C9.00001 13.1326 8.94733 13.2597 8.85356 13.3535C8.75979 13.4473 8.63262 13.4999 8.50001 13.4999H6.00001C5.73479 13.4999 5.48044 13.6053 5.2929 13.7928C5.10537 13.9804 5.00001 14.2347 5.00001 14.4999C5.00001 14.7652 5.10537 15.0195 5.2929 15.2071C5.48044 15.3946 5.73479 15.4999 6.00001 15.4999H7.00001V15.9999C7.00001 16.2652 7.10537 16.5195 7.2929 16.7071C7.48044 16.8946 7.73479 16.9999 8.00001 16.9999C8.26522 16.9999 8.51958 16.8946 8.70711 16.7071C8.89465 16.5195 9.00001 16.2652 9.00001 15.9999V15.4499C9.60758 15.3266 10.1476 14.9818 10.5154 14.4827C10.8831 13.9835 11.0522 13.3655 10.9899 12.7487C10.9276 12.1319 10.6383 11.5602 10.1782 11.1446C9.71807 10.7291 9.11998 10.4993 8.50001 10.4999H7.50001C7.3674 10.4999 7.24022 10.4473 7.14645 10.3535C7.05269 10.2597 7.00001 10.1326 7.00001 9.99995C7.00001 9.86734 7.05269 9.74016 7.14645 9.64639C7.24022 9.55262 7.3674 9.49995 7.50001 9.49995ZM19 10.9999H16V1.99995C16.0007 1.82374 15.9548 1.65047 15.867 1.49769C15.7792 1.34491 15.6526 1.21805 15.5 1.12995C15.348 1.04218 15.1755 0.995972 15 0.995972C14.8245 0.995972 14.652 1.04218 14.5 1.12995L11.5 2.84995L8.50001 1.12995C8.34799 1.04218 8.17554 0.995972 8.00001 0.995972C7.82447 0.995972 7.65203 1.04218 7.50001 1.12995L4.50001 2.84995L1.50001 1.12995C1.34799 1.04218 1.17554 0.995972 1.00001 0.995972C0.824471 0.995972 0.652027 1.04218 0.500008 1.12995C0.347404 1.21805 0.220789 1.34491 0.132986 1.49769C0.0451828 1.65047 -0.000691685 1.82374 7.88288e-06 1.99995V17.9999C7.88288e-06 18.7956 0.316078 19.5587 0.878688 20.1213C1.4413 20.6839 2.20436 20.9999 3.00001 20.9999H17C17.7957 20.9999 18.5587 20.6839 19.1213 20.1213C19.6839 19.5587 20 18.7956 20 17.9999V11.9999C20 11.7347 19.8947 11.4804 19.7071 11.2928C19.5196 11.1053 19.2652 10.9999 19 10.9999ZM3.00001 18.9999C2.73479 18.9999 2.48044 18.8946 2.2929 18.7071C2.10536 18.5195 2.00001 18.2652 2.00001 17.9999V3.72995L4.00001 4.86995C4.15435 4.95056 4.32589 4.99266 4.50001 4.99266C4.67413 4.99266 4.84567 4.95056 5.00001 4.86995L8.00001 3.14995L11 4.86995C11.1543 4.95056 11.3259 4.99266 11.5 4.99266C11.6741 4.99266 11.8457 4.95056 12 4.86995L14 3.72995V17.9999C14.0027 18.3411 14.0636 18.6793 14.18 18.9999H3.00001ZM18 17.9999C18 18.2652 17.8947 18.5195 17.7071 18.7071C17.5196 18.8946 17.2652 18.9999 17 18.9999C16.7348 18.9999 16.4804 18.8946 16.2929 18.7071C16.1054 18.5195 16 18.2652 16 17.9999V12.9999H18V17.9999Z"
+                fill="#0F2756" />
+            </svg>
+            Узнать тарифы</a>
+          <a href="#!" class="nav_link btn mob:btn-block btn-half">Войти <img src="./assets/icons/sign-in.png" alt=""
+              class="icon"></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="main">
+      <section class="intro">
+        <div class="intro-info">
+          <h1>Ваш способ связи <br> с клиентами</h1>
+          <div>
+            <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_1037_3941)">
+                <rect x="15" y="11" width="64" height="64" rx="13.7143" fill="url(#paint0_linear_1037_3941)" />
+                <ellipse cx="46.4286" cy="41.857" rx="23.4286" ry="19.4286" fill="white" />
+                <path
+                  d="M41.2879 59C39.5737 60.7143 33.8594 63.5714 29.8594 64.1428C33.9737 59.5714 34.4308 56.7143 34.4308 56.1428C37.4784 56.3333 42.9042 57.3837 41.2879 59Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <filter id="filter0_d_1037_3941" x="0.142859" y="0.714287" width="93.7143" height="93.7143"
+                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feMorphology radius="3.42857" operator="erode" in="SourceAlpha"
+                    result="effect1_dropShadow_1037_3941" />
+                  <feOffset dy="4.57143" />
+                  <feGaussianBlur stdDeviation="9.14286" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix"
+                    values="0 0 0 0 0.333333 0 0 0 0 0.945098 0 0 0 0 0.435294 0 0 0 0.65 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1037_3941" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1037_3941" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_1037_3941" x1="44.7143" y1="11" x2="44.7143" y2="75"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#5BF675" />
+                  <stop offset="1" stop-color="#0CBD2A" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_1037_3934)">
+                <rect x="15" y="11" width="64" height="64" rx="13.7143" fill="#7360F2" />
+                <path
+                  d="M64.9974 22.7261C63.7569 21.5815 58.744 17.9424 47.5782 17.893C47.5782 17.893 34.4109 17.099 27.992 22.9868C24.4189 26.5606 23.1619 31.79 23.0293 38.2733C22.8967 44.7566 22.7252 56.9067 34.4371 60.2012H34.4483L34.4408 65.2282C34.4408 65.2282 34.3659 67.2635 35.706 67.6785C37.327 68.1819 38.2784 66.635 39.826 64.9676C40.6754 64.0522 41.8485 62.7076 42.7324 61.6798C50.7423 62.354 56.9028 60.8131 57.6024 60.5854C59.2197 60.0611 68.3712 58.8888 69.8597 46.7394C71.396 34.217 69.1166 26.2962 64.9974 22.7261Z"
+                  fill="white" />
+                <path
+                  d="M62.3971 25.2556C61.3484 24.3028 56.8217 21.4585 47.3765 21.4173C47.3765 21.4173 36.192 20.6825 30.7626 25.6002C27.7408 28.5838 26.7228 33.0206 26.6112 38.435C26.4996 43.8493 25.9213 54.1927 35.8249 56.944C35.8249 56.944 35.786 64.6229 35.7815 65.2978C35.7815 65.7697 35.8564 66.0926 36.126 66.1593C36.3201 66.2064 36.6107 66.1061 36.8579 65.8596C38.4415 64.2693 43.5112 58.1531 43.5112 58.1531C50.3137 58.5973 55.7258 57.2542 56.3078 57.0639C57.6801 56.6227 65.1028 55.9852 66.359 45.8382C67.6572 35.3787 65.8818 28.2392 62.3971 25.2556Z"
+                  fill="#7360F2" />
+                <path d="M52.1743 37.9901C52.0514 35.5136 50.7935 34.213 48.4004 34.0881" stroke="white"
+                  stroke-width="1.26295" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M55.419 39.0762C55.4689 36.769 54.7855 34.8414 53.3688 33.2933C51.9455 31.7397 49.9754 30.8842 47.4473 30.6992"
+                  stroke="white" stroke-width="1.26295" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M58.7299 40.3737C58.6995 36.3701 57.5032 33.217 55.1411 30.9143C52.779 28.6116 49.8413 27.4481 46.3281 27.4236"
+                  stroke="white" stroke-width="1.26295" stroke-linecap="round" stroke-linejoin="round" />
+                <path
+                  d="M48.5252 46.4484C48.5252 46.4484 49.4129 46.5233 49.8908 45.9345L50.8227 44.7622C51.2721 44.1809 52.3568 43.8101 53.419 44.4019C54.215 44.8558 54.9878 45.3493 55.7344 45.8805C56.4393 46.3989 57.8828 47.6034 57.8873 47.6034C58.5749 48.184 58.7337 49.0364 58.2656 49.9353C58.2656 49.9406 58.2618 49.9496 58.2618 49.9541C57.7462 50.8479 57.0915 51.6541 56.3224 52.3421C56.3134 52.3466 56.3134 52.3511 56.3052 52.3556C55.637 52.9139 54.9806 53.2313 54.3359 53.3077C54.2409 53.3243 54.1445 53.3303 54.0482 53.3257C53.7639 53.3284 53.4811 53.2849 53.2107 53.1968L53.1898 53.1661C52.1965 52.886 50.538 52.1848 47.7762 50.6612C46.1779 49.7899 44.6563 48.7848 43.2277 47.6566C42.5117 47.0915 41.8286 46.4857 41.182 45.8423L41.1131 45.7734L41.0442 45.7045L40.9752 45.6356C40.952 45.6131 40.9295 45.5899 40.9063 45.5667C40.2629 44.92 39.6572 44.237 39.0921 43.5209C37.9641 42.0925 36.959 40.5712 36.0875 38.9733C34.5638 36.2106 33.8627 34.5537 33.5826 33.5589L33.5518 33.5379C33.464 33.2676 33.4208 32.9847 33.4237 32.7005C33.4185 32.6042 33.4243 32.5077 33.441 32.4128C33.5214 31.7691 33.8392 31.1121 34.3946 30.442C34.3991 30.4337 34.4035 30.4337 34.408 30.4247C35.0959 29.6557 35.9021 29.0012 36.7961 28.4861C36.8006 28.4861 36.8096 28.4816 36.8148 28.4816C37.7137 28.0134 38.5662 28.1723 39.146 28.8562C39.1505 28.8607 40.3528 30.3041 40.8689 31.009C41.4001 31.7564 41.8937 32.5299 42.3476 33.3267C42.9393 34.3881 42.5685 35.475 41.9873 35.923L40.8149 36.8549C40.2232 37.3328 40.3011 38.2204 40.3011 38.2204C40.3011 38.2204 42.0374 44.7921 48.5252 46.4484Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <filter id="filter0_d_1037_3934" x="0.142859" y="0.714287" width="93.7143" height="93.7143"
+                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feMorphology radius="3.42857" operator="erode" in="SourceAlpha"
+                    result="effect1_dropShadow_1037_3934" />
+                  <feOffset dy="4.57143" />
+                  <feGaussianBlur stdDeviation="9.14286" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0.45098 0 0 0 0 0.376471 0 0 0 0 0.94902 0 0 0 0.65 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1037_3934" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1037_3934" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+            <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_1037_3925)">
+                <rect x="15" y="11" width="64" height="64" rx="10.6667" fill="url(#paint0_linear_1037_3925)" />
+                <path
+                  d="M43.0876 37.3994L41.1817 32.8727C41.0223 32.4942 40.6516 32.248 40.2409 32.248C39.0767 32.248 37.9602 32.7105 37.137 33.5337L36.7337 33.937C36.2063 34.4644 35.8383 35.1296 35.6717 35.8565L35.5701 36.3C35.3427 37.2921 35.3885 38.3273 35.7025 39.2955L36.0828 40.4682C36.5299 41.8466 37.2171 43.135 38.1129 44.2739L39.3933 45.9018C40.6166 47.4571 42.067 48.8194 43.696 49.9428L44.9426 50.8025C46.1796 51.6556 47.5265 52.3372 48.9465 52.8288L50.3774 53.3241C51.3183 53.6498 52.307 53.816 53.3027 53.816H53.4482C54.3316 53.816 55.1927 53.5391 55.9104 53.0242L55.9806 52.9738C57.1243 52.1534 57.9441 50.9579 58.2973 49.5954L58.4564 48.9818C58.5662 48.5582 58.3541 48.1173 57.9546 47.9388L53.7376 46.0546C53.0779 45.7599 52.3034 45.9245 51.8206 46.4621L50.21 48.2558C49.977 48.5152 49.5984 48.5852 49.2881 48.426L48.1848 47.8602C45.9703 46.7246 44.0318 45.1173 42.5056 43.1514L41.361 41.6769C41.1773 41.4403 41.1823 41.1078 41.3731 40.8769L42.8369 39.1049C43.2314 38.6274 43.328 37.9702 43.0876 37.3994Z"
+                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M28.1877 42.8719C28.1877 47.0013 29.5089 50.8221 31.7516 53.9346L30.6396 57.4056L29.7018 60.5521L33.3133 59.6492L33.3249 59.6569L36.7624 58.7286C39.7415 60.6807 43.304 61.8159 47.1317 61.8159C57.5941 61.8159 66.0757 53.3344 66.0757 42.8719C66.0757 32.4094 57.5941 23.9279 47.1317 23.9279C36.6692 23.9279 28.1877 32.4094 28.1877 42.8719ZM36.2235 62.8799C39.4631 64.6498 43.1799 65.6559 47.1317 65.6559C59.7149 65.6559 69.9157 55.4551 69.9157 42.8719C69.9157 30.2886 59.7149 20.0879 47.1317 20.0879C34.5484 20.0879 24.3477 30.2886 24.3477 42.8719C24.3477 47.1031 25.501 51.0649 27.5106 54.4601L25.3723 61.6345L24.0977 65.9113L28.4272 64.8289L36.2235 62.8799Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <filter id="filter0_d_1037_3925" x="0.142859" y="0.714287" width="93.7143" height="93.7143"
+                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feMorphology radius="3.42857" operator="erode" in="SourceAlpha"
+                    result="effect1_dropShadow_1037_3925" />
+                  <feOffset dy="4.57143" />
+                  <feGaussianBlur stdDeviation="9.14286" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix"
+                    values="0 0 0 0 0.333333 0 0 0 0 0.945098 0 0 0 0 0.435294 0 0 0 0.65 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1037_3925" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1037_3925" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_1037_3925" x1="15" y1="11" x2="79" y2="75"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3CE963" />
+                  <stop offset="1" stop-color="#2AD149" />
+                </linearGradient>
+              </defs>
+            </svg>
+            <svg width="94" height="95" viewBox="0 0 94 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_1037_3944)">
+                <rect x="15" y="11" width="64" height="64" rx="13.7143" fill="url(#paint0_linear_1037_3944)" />
+                <path
+                  d="M29.3734 54.8574V33.7224H26.0925V54.8574H29.3734ZM43.7335 54.8574L51.2764 33.7224H47.7759L42.0052 51.1665H41.9173L36.1612 33.7224H32.6021L40.145 54.8574H43.7335ZM57.8006 36.476H62.4289C64.9628 36.476 66.5153 37.9113 66.5153 40.2694C66.5153 42.6861 65.0507 44.0775 62.5168 44.0775H57.8006V36.476ZM57.8006 46.7286H62.4289L66.735 54.8574H70.5285L65.783 46.2159C68.3608 45.3518 69.8841 43.0376 69.8841 40.1815C69.8841 36.2416 67.1744 33.7224 62.8244 33.7224H54.5198V54.8574H57.8006V46.7286Z"
+                  fill="white" />
+                <rect x="15.5714" y="11.5714" width="62.8571" height="62.8571" rx="13.1429"
+                  stroke="url(#paint1_linear_1037_3944)" stroke-width="1.14286" />
+              </g>
+              <defs>
+                <filter id="filter0_d_1037_3944" x="0.142859" y="0.714287" width="93.7143" height="93.7143"
+                  filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feMorphology radius="3.42857" operator="erode" in="SourceAlpha"
+                    result="effect1_dropShadow_1037_3944" />
+                  <feOffset dy="4.57143" />
+                  <feGaussianBlur stdDeviation="9.14286" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.94 0 0 0 0 1 0 0 0 0.44 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1037_3944" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1037_3944" result="shape" />
+                </filter>
+                <linearGradient id="paint0_linear_1037_3944" x1="44.7143" y1="11" x2="44.7143" y2="75"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#A9DFFE" />
+                  <stop offset="1" stop-color="#5DE2F4" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_1037_3944" x1="47" y1="11" x2="47" y2="75"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="white" stop-opacity="0" />
+                  <stop offset="1" stop-color="#8FBFEC" stop-opacity="0.88" />
+                </linearGradient>
+              </defs>
+            </svg>
+
+          </div>
+          <p>Cпециализируемся на займовом трафике.</p>
+          <a href="./pages/register.html" class="btn mob:btn-block btn-primary">Подключиться</a>
+        </div>
+        <div class="intro-img">
+          <img src="./assets/intro-svg.svg" alt="">
+        </div>
+      </section>
+      <section class="section-2">
+        <div class="info">
+          <h2>
+            Мы предлагаем инструменты, которые <span> надежно работают, обладают разнообразным функционалом и просты в
+              обращении.
+            </span></h2>
+          <div class="flex">
+            <div class="left-border">
+              <h5>Наша цель:</h5>
+              <p>Предоставить сервис качественной и эффективной коммуникации с вашими клиентами.</p>
+            </div>
+            <a href="./pages/register.html" class="btn mob:btn-block btn-arrow">Узнать тарифы
+              <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM1 9L25 9V7L1 7L1 9Z"
+                  fill="#0F2756" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="you-gain" id="you-gain">
+        <h2>Вы получаете:</h2>
+        <div class="flex">
+          <ul>
+            <li>
+              <div>
+                <img src="./assets/icons/stats.svg" alt="">
+                <h5>Статистика</h5>
+              </div>
+              <p>Детальная статистика в реальном времени. Для отслеживания данных по вашим цепочкам.</p>
+            </li>
+            <hr>
+            <li>
+              <div>
+                <img src="./assets/icons/stats.svg" alt="">
+                <h5>Удобная интеграция</h5>
+              </div>
+              <p>SMPP и API, отправка СМС по API и загрузка файлов.</p>
+            </li>
+            <hr>
+            <li>
+              <div>
+                <img src="./assets/icons/stats.svg" alt="">
+                <h5>Фиксированные цены</h5>
+              </div>
+              <p>Наше преимущество — фиксированные низкие цены, не зависящие от количества СМС или от суммы пополнения.
+              </p>
+            </li>
+            <hr>
+            <li>
+              <div>
+                <img src="./assets/icons/stats.svg" alt="">
+                <h5>Безопасность</h5>
+              </div>
+              <p>Мы являемся оператором персональных данных. Данные ваших клиентов надёжно защищены.</p>
+            </li>
+            <hr>
+            <li>
+              <div>
+                <img src="./assets/icons/stats.svg" alt="">
+                <h5>Нейтральные имена отправителей</h5>
+              </div>
+              <p>Cразу можно начинать рассылку.</p>
+            </li>
+          </ul>
+          <div><img src="./assets/you-gain.png" alt=""></div>
+        </div>
+        <a href="./pages/register.html" class="btn mob:btn-block btn-arrow">Узнать тарифы
+          <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM1 9L25 9V7L1 7L1 9Z"
+              fill="#0F2756" />
+          </svg>
+        </a>
+      </section>
+      <section class="capability">
+        <h2>Используйте <span>все возможности</span> быстрой коммуникации с пользователями:</h2>
+        <div>
+          <div class="flex">
+            <div class="h1">
+              <img src="./assets/msg.svg" alt="">
+              SMS
+            </div>
+            <p class="mob:d-none noto">Имя отправителя</p>
+            <p class="mob:d-none noto">Как это работает</p>
+          </div>
+          <hr class="mob:d-none">
+          <div class="flex">
+            <p class="h2">
+              ABCabc
+            </p>
+            <h4>Буквенное</h4>
+            <p class="inter">Использование нейтральных имен отправителей с быстрой доставкой до абонентов. Без
+              ожидания регистрации!</p>
+          </div>
+          <div class="flex">
+            <p class="h2">
+              123-456
+            </p>
+            <h4>Цифровое</h4>
+            <p class="inter">Канал для массовых рассылок по низкой цене с уровнем доставки до 90% от активной базы.
+              Отправка осуществляется с
+              цифровых номеров РФ.</p>
+          </div>
+        </div>
+      </section>
+      <section class="db-client flex">
+        <h5 class="title_with_arrow">
+          База данных клиента
+        </h5>
+        <div class="flex">
+          <svg class="main-line desk:d-none" width="1" height="360" viewBox="0 0 1 360" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" width="360" height="0.999984" transform="rotate(90 1 0)" fill="#B2BED2" />
+          </svg>
+          <svg class="turn-line desk:d-none" width="20" height="1" viewBox="0 0 20 1" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" width="1" height="20" transform="rotate(90 20 0)" fill="#B2BED2" />
+          </svg>
+          <span></span>
+          <svg class="turn-line desk:d-none" width="20" height="1" viewBox="0 0 20 1" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" width="1" height="20" transform="rotate(90 20 0)" fill="#B2BED2" />
+          </svg>
+          <span></span>
+          <svg class="turn-line desk:d-none" width="20" height="1" viewBox="0 0 20 1" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" width="1" height="20" transform="rotate(90 20 0)" fill="#B2BED2" />
+          </svg>
+          <span></span>
+          <svg class="main-line-desk mob:d-none" width="761" height="1" viewBox="0 0 761 1" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="761" height="1" fill="#B2BED2" />
+          </svg>
+          <svg class="turn-line1-desk mob:d-none" width="1" height="24" viewBox="0 0 1 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="1" height="24" fill="#B2BED2" />
+          </svg>
+          <svg class="turn-line2-desk mob:d-none" width="1" height="24" viewBox="0 0 1 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="1" height="24" fill="#B2BED2" />
+          </svg>
+          <svg class="turn-line3-desk mob:d-none" width="1" height="24" viewBox="0 0 1 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="1" height="24" fill="#B2BED2" />
+          </svg>
+          <div>
+            <img src="./assets/beeline.png" alt="">
+          </div>
+          <div>
+            <img src="./assets/megafon.png" alt="">
+          </div>
+          <div>
+            <img src="./assets/tele2.png" alt="">
+          </div>
+          <div>
+            <img src="./assets/mtc.png" alt="">
+          </div>
+          <svg class="turn-line-left desk:d-none" width="20" height="1" viewBox="0 0 20 1" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="20" width="1" height="20" transform="rotate(90 20 0)" fill="#B2BED2" />
+          </svg>
+          <span></span>
+          <svg class="main-line2 desk:d-none" width="1" height="191" viewBox="0 0 1 191" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect x="1" width="191" height="0.999992" transform="rotate(90 1 0)" fill="#B2BED2" />
+          </svg>
+          <svg class="turn-line-bottom mob:d-none" width="1" height="24" viewBox="0 0 1 24" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="1" height="24" fill="#B2BED2" />
+          </svg>
+          <svg class="main-line2-desk mob:d-none" width="355" height="1" viewBox="0 0 355 1" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="355" height="1" transform="matrix(1 0 0 -1 0 1)" fill="#B2BED2" />
+          </svg>
+          <p class="noto mob:d-none">Распределение по мобильным операторам в нашей системе</p>
+        </div>
+        <div class="flex-reverse">
+          <div>
+            <h4>ABCabc</h4>
+          </div>
+          <div>
+            <h4>123-456</h4>
+          </div>
+        </div>
+      </section>
+      <section class="update flex">
+        <h5>Выгодная, удобная и стабильная схема отправки смс-сообщений <strong>уже настроена.</strong>
+        </h5>
+        <p class="noto">Благодаря нашему опыту вы подключаетесь к каналам с самым лучшим соотношением доставляемости и
+          цены за смс</p>
+        <a href="./pages/register.html" class="btn btn-block btn-primary">Подключиться</a>
+      </section>
+    </div>
+    <section class="scroll">
+      <div class="info">
+        <div class="box">
+          <div>
+            <div class="h1">
+              <img src="./assets/whatsapp.svg" alt="">
+              Whats App
+            </div>
+            <p class="noto">Универсальный канал рассылки через самый используемый в мире мессенджер.
+            </p>
+            <p class="noto">
+              До 1000 символов + фото в сообщении
+            </p>
+            <p class="noto">
+              Единая цена на весь мир.
+            </p>
+            <a href="./pages/register.html" class="btn mob:btn-block btn-arrow">Узнать тарифы
+              <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM1 9L25 9V7L1 7L1 9Z"
+                  fill="#0F2756" />
+              </svg>
+            </a>
+          </div>
+          <div class="slide desk:d-none">
+            <img src="./assets/iPhone_13_Pro_left.png" alt="">
+            <img src="./assets/iPhone_13_Pro_right.png" alt="">
+          </div>
+
+        </div>
+        <div class="box">
+          <div>
+            <div class="h1">
+              <img src="./assets/viber.svg" alt="">
+              Viber
+            </div>
+            <p class="noto">Официальный канал мессенджера для вашей рассылки.
+            </p>
+            <p class="noto">
+              До 1000 символов + фото + кнопка в сообщении.
+            </p>
+            <p class="noto">
+              Единая цена на весь мир.
+            </p>
+            <a href="./pages/register.html" class="btn mob:btn-block btn-arrow">Узнать тарифы
+              <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM1 9L25 9V7L1 7L1 9Z"
+                  fill="#0F2756" />
+              </svg>
+            </a>
+          </div>
+          <div class="slide desk:d-none">
+            <img src="./assets/iPhone_12_Pro_left.png" class="iPhone12_left" alt="">
+            <img src="./assets/iPhone_12_Pro_right.png" alt="">
+          </div>
+
+        </div>
+        <div class="box">
+          <div>
+            <div class="h1">
+              <img src="./assets/ivr.svg" alt="">
+              IVR
+            </div>
+            <p class="noto lg">Голосовые сообщения</p>
+            <p class="noto">Благодаря глубокой интеграции с смс-цепочками можно выстроить эффективную стратегию касаний
+              с пользователями.
+            </p>
+            <p class="noto">
+              Дешевле и эффективнее call-центра.
+            </p>
+            <p class="noto">
+              Определяет ответ пользователя голосом и нажатием на кнопку. В большинстве случаев определяет автоответчик.
+            </p>
+            <a href="./pages/register.html" class="btn mob:btn-block btn-arrow">Узнать тарифы
+              <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM1 9L25 9V7L1 7L1 9Z"
+                  fill="#0F2756" />
+              </svg>
+            </a>
+          </div>
+          <div class="slide desk:d-none">
+            <img src="./assets/message.png" alt=""
+              style="z-index: 1; margin-top: -80px; margin-left: -120px; width: 200px;">
+            <img src="./assets/robot-in-ellipse.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div id="carousel" class="mob:d-none">
+        <div class="slider">
+          <div class="slide one">
+            <img src="./assets/iPhone_13_Pro_left.png" alt="" data-speed="0.5">
+            <img src="./assets/iPhone_13_Pro_right.png" alt="" data-speed="0.4">
+          </div>
+          <div class="slide two">
+            <img src="./assets/iPhone_12_Pro_left.png" alt="" data-speed="0.25">
+            <img src="./assets/iPhone_12_Pro_right.png" alt="" data-speed=".15">
+          </div>
+          <div class="slide three">
+            <img src="./assets/message.png" alt="" data-speed="0.2" style="z-index: 1; margin-top: -100px">
+            <img src="./assets/robot-in-ellipse.png" alt="" data-speed=".15">
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="main">
+      <section class="lidogen intro" id="lidogeneration">
+        <div class="lidogen-info">
+          <h2 class="h2" style="margin-bottom: 4px">Лидогенерация</h2>
+          <p class="noto lg">Привлечение новых клиентов в ваш бизнес</p>
+          <div class="flex">
+            <div>
+              <p class="inter">Отправка вашей рекламы по нашим клиентам:</p>
+              <ul>
+                <li>
+                  <img src="./assets/icons/lido-lamp.svg" alt="">
+                  <p class="inter">Вы предлагаете креатив</p>
+                </li>
+                <li>
+                  <img src="./assets/icons/lido-net.svg" alt="">
+                  <p class="inter"> Согласовываем креатив</p>
+                </li>
+                <li>
+                  <img src="./assets/icons/lido-users.svg" alt="">
+                  <p class="inter">Выбираете размер базы</p>
+                </li>
+                <li>
+                  <img src="./assets/icons/lido-plane.svg" alt="">
+                  <p class="inter">Мы отправляем рассылку</p>
+                </li>
+                <li>
+                  <img src="./assets/icons/lido-client.svg" alt="">
+                  <p class="inter">Вы получаете клиентов</p>
+                </li>
+              </ul>
+            </div>
+            <div><img src="./assets/oplata.svg" alt=""></div>
+          </div>
+          <a href="./pages/register.html" class="btn mob:btn-block btn-arrow">Узнать тарифы
+            <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM1 9L25 9V7L1 7L1 9Z"
+                fill="#0F2756" />
+            </svg>
+          </a>
+        </div>
+        <div class="intro-img">
+          <img src="./assets/lidogen-img.svg" alt="">
+        </div>
+      </section>
+      <section class="monet intro" id="monetization">
+        <div class="monet-info">
+          <h2 class="h2">Монетизация трафика</h2>
+          <div class="left-border">
+            <p class="noto">Профессионалы по интернет-маркетингу с опытом работы более 10 лет составят для вас цепочки
+              касаний и реализуют их по
+              вашим клиентам.</p>
+            <div class="text-gray-2 inter" style="display: flex;align-items: center;gap: 16px; margin-top: 20px;">
+              <img src="./assets/icons/stats-orange.svg" alt="" class="icon" width="36" height="36">
+              Наше вознаграждение будет зависеть от результатов проделанной работы (Revshare).
+            </div>
+          </div>
+          <div>
+          </div>
+          <a href="./pages/register.html" class="btn mob:btn-block btn-arrow">Узнать тарифы
+            <svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M1 7C0.447715 7 0 7.44772 0 8C0 8.55228 0.447715 9 1 9L1 7ZM25.7071 8.70711C26.0976 8.31658 26.0976 7.68342 25.7071 7.29289L19.3431 0.928932C18.9526 0.538408 18.3195 0.538408 17.9289 0.928932C17.5384 1.31946 17.5384 1.95262 17.9289 2.34315L23.5858 8L17.9289 13.6569C17.5384 14.0474 17.5384 14.6805 17.9289 15.0711C18.3195 15.4616 18.9526 15.4616 19.3431 15.0711L25.7071 8.70711ZM1 9L25 9V7L1 7L1 9Z"
+                fill="#0F2756" />
+            </svg>
+          </a>
+        </div>
+        <div class="intro-img">
+          <img src="./assets/monet-img.svg" alt="">
+        </div>
+      </section>
+      <h2 style="padding-left: 5vw; max-width: 550px;width: 100%;margin-bottom: 0">Для подключения к системе оставьте
+        заявку:</h2>
+      <section class="update two flex">
+        <a href="./pages/register.html" class="btn btn-block btn-primary">Подключиться</a>
+      </section>
+      <section class="contacts" id="contacts">
+        <h2>Контакты</h2>
+        <div class="flex">
+          <div class="flex">
+            <div><img src="./assets/icons/Telegram.png" alt=""></div>
+            <div>
+              <a href="https://t.me/TatianaMichurina" class="link">@TatianaMichurina</a>
+              <p class="inter">Татьяна</p>
+            </div>
+          </div>
+          <div class="flex">
+            <div><img src="./assets/icons/Telegram.png" alt=""></div>
+            <div>
+              <a href="https://t.me/katesmsads" class="link">@katesmsads</a>
+              <p class="inter">Екатерина</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-questions">
+        <h2>По вопросам сотрудничества</h2>
+        <div class="flex">
+          <div>
+            <p class="inter">Стать нашим клиентом:</p>
+            <a href="#!" class="link">
+              <img src="./assets/icons/mail.svg" alt="" class="icon">
+              sales@smsads.ru
+            </a>
+          </div>
+          <div>
+            <p class="inter">По общим вопросам:</p>
+            <a href="#!" class="link">
+              <img src="./assets/icons/mail.svg" alt="" class="icon">
+              info@smsads.ru
+            </a>
+          </div>
+          <div>
+            <p class="inter">Предложить альтернативные каналы коммуникации нам и нашим клиентам:</p>
+            <a href="#!" class="link">
+              <img src="./assets/icons/mail.svg" alt="" class="icon">
+              partner@smsads.ru
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <main>
+      <div class="flex">
+        <a href="./index.html" target="_blank"><img src="./assets/Logo_1_desk.png" alt=""></a>
+        <a href="./pages/notFound.html" target="_blank"><img src="./assets/Logo_2.png" alt=""></a>
+        <a href="https://devtek.io" target="_blank"><img src="./assets/Logo_3.png" alt=""></a>
+      </div>
+      <div class="flex">
+        <div class="inter">
+          <a href="#!">Политика обработки персональных данных</a>
+          <br>
+          <a href="#!">Партнерское соглашение</a>
+          <p class="raleway">© 2022. ИП Мичурина Т. Ю. Все права на сайт защищены</p>
+        </div>
+        <div>
+          <p class="inter lg">
+            <img src="./assets/icons/shield.svg" alt="" class="icon">
+            ИП Мичурина Т. Ю. является оператором <br> персональных данных (приказ № 237 от 21.12.2020)
+          </p>
+        </div>
+      </div>
+    </main>
+  </footer>
+
+  <button id="up"></button>
+
+  <script src="./script/script.js">
+  </script>
+</body>
+
+</html>
