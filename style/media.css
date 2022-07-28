@@ -59,6 +59,10 @@
     display: none;
   }
 
+  #up {
+    display: grid;
+  }
+
   .error .inter {
     margin-bottom: 72px;
   }

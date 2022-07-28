@@ -320,12 +320,13 @@ header {
   left: 20px;
   bottom: 40px;
   border-radius: 50%;
-  display: grid;
+  display: none;
   place-content: center;
   box-shadow: 0px 6px 12px -1px #0f2a5f26;
   border: 1px solid var(--gray-blue);
   background: #fff;
   opacity: 0;
+  z-index: 40;
   transition: 500ms;
 }
 
