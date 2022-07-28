@@ -314,7 +314,19 @@ header {
 }
 
 #up {
-  
+  width: 48px;
+  height: 48px;
+  position: fixed;
+  left: 20px;
+  bottom: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  box-shadow: 0px 6px 12px -1px #0f2a5f26;
+  border: 1px solid var(--gray-blue);
+  background: #fff;
+  opacity: 0;
+  transition: 500ms;
 }
 
 /* intro */
@@ -766,7 +778,6 @@ p.lg {
   display: none;
   gap: 200px;
   padding: 0 100px;
-  transition: 0.5s;
 }
 
 .slide {
@@ -788,7 +799,6 @@ p.lg {
   position: relative;
   background-color: #fff;
   opacity: 0;
-  transition: 500ms;
 }
 
 .slide img {
@@ -799,7 +809,6 @@ p.lg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 1s ease;
 }
 .slide img.iPhone12_left {
   left: 30%;
